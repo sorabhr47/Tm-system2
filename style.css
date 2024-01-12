@@ -1,9 +1,34 @@
 html,body {
   height: 100%;
   width: 100%;
+  background-image: url("https://i.postimg.cc/cJFVNBwq/pexels-kasuma-1785493.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
+.navbar{
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  
+}
+.navbar .h3 span{
+  color: #000;
+  font-size: 1.3em;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+/*need to check*/
+.navbar .h3:hover span {
+  transform: scale(1.2);
+}
+  
 
 .navbar a{
+ font-size:0.7rem;
   justify-content:center;
 }
 .intro{
@@ -28,6 +53,15 @@ html,body {
   font-size:1.5vw;
   margin-top:4vw;
 }
+.left button{
+  font-size:1.5vw;
+  font-weight:600;
+  transition: all in 0.3s ease;
+}
+.left button:hover{
+  transform: scale(1.1);
+}
+
 .left h1{
   font-size:4.5vw;
   line-height:4.4vw;
@@ -48,14 +82,27 @@ html,body {
   width:100%;
   height:100%;
 }
+.container footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 20px;
+}
 
-
-@media (max-width: 790px) {
-  .navbar .h2 .h3 .navbar-brand{
+@media (max-width: 924px) {
+  body{
+    
+    background-image: url("https://i.postimg.cc/N0Rs3QSB/IMG-20240111-135249.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .navbar .h3 .h5 .navbar-brand{
     justify-content:center;
     display:none;
   }
   .intro{
+    display:flex;
   flex-direction:column;
   }
   .intro .left{
@@ -71,7 +118,7 @@ html,body {
     height:40%;
     margin-top:0px;
     padding-top:0vw;
-    background-color:red;
+    background-color:none;
   }
   .left h1{
     font-size:9vw;
@@ -93,5 +140,15 @@ html,body {
     width:100%;
     justify-content:center;
     margin-top:0vw;
+  }
+  .container footer{
+    height: 50px;
+ }
+  .container footer .copyright {
+    height:50px;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 2px;
+    margin:0%;
   }
 }
